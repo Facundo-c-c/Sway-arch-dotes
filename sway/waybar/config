@@ -1,0 +1,78 @@
+{
+    "position": "top",
+    "height": 43,
+    "modules-left": ["custom/logo","custom/playerctl"],
+    "modules-center": ["sway/workspaces"],
+    "modules-right": ["tray","network","wireplumber","custom/clock"],
+	
+    "custom/clock": {
+        "format": "    {}",
+        "interval": 60,
+        "exec": "date +'%H : %M'",
+    },    
+
+   
+    "sway/workspaces": {
+        "all-outputs": true,
+    "format": "{icon}",
+        "format-icons": {
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV",
+            "5": "V",
+        },
+        "persistent-workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+         },
+        },
+
+
+    "tray": {
+        "icon-size": 17,
+        "spacing":3,
+    },
+
+    "custom/logo": {
+        "format": "󰣇 ",
+        "interval": "once",
+        "tooltip": false
+   },
+
+"wireplumber": {
+    "format": "{icon}     {volume}%",
+    "format-muted": "",
+    "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+    "format-icons": ["", "", ""],
+    "max-volume": 100,
+    "scroll-step": 5,
+},
+
+    "network": {
+	"interface": "wlan0",
+	"format": "{ifname}",
+	"format-wifi":"     {essid}",
+	"format-ethernet": "{ifname} " ,
+	"tooltip-format": "{ifname}",
+	"tooltip-format-wifi": " {essid} ({signalStrength}%)   ",
+	"tooltip-format-ethernet": "{ifname}  ",
+	"tooltip-format-disconnected": "Disconnected",
+	"max-length": 60,
+    "on-click":"nmcli networking off",
+    "on-click-right": "nmcli networking on",
+    },
+
+
+    "custom/playerctl": {
+        "format": "{}",
+        "exec": "~/.config/sway/waybar/playerctl-info.sh",
+        "interval": 5,
+	"on-click":"playerctl play-pause"
+    },
+
+
+
+}
+

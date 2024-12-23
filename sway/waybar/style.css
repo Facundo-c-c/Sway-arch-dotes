@@ -1,0 +1,64 @@
+*{
+  padding: 1px 1px;
+  color: #c2c1c2;
+}
+
+window#waybar{
+  font-size: 12px;
+  background-color: #0f1112;
+}
+
+#custom-playerctl,
+#network,
+#wireplumber,
+#tray,
+#custom-clock,
+#custom-logo{
+  margin: 3px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom: 2px #1e1e1e solid;
+  background-color: #141719;
+}
+
+#custom-logo{
+ font-size: 18px;
+ padding-left: 8px
+}
+
+#workspaces {
+  font-size: 12px;
+  margin: 2px 0px;
+  color: white;
+  border-radius: 0px;
+
+}
+#workspaces button.urgent  {
+  color: #630330;
+}
+#workspaces button{
+ border-bottom: 2px #1e1e1e solid;
+ margin-left: 4px;
+ margin-right: 4px;
+ border-radius: 0px;
+ color: grey
+}
+#workspaces button.persistent{
+  color: #545154;
+}
+#workspaces button.empty{
+  color: #3f3f3f;
+}
+#workspaces button.focused{
+ border-bottom: 2px white solid;
+ border-radius: 0px;
+ color: white;
+}
+
