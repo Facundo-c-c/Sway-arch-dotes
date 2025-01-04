@@ -1,7 +1,10 @@
 {
     "position": "top",
     "height": 43,
-    "modules-left": ["custom/logo","custom/playerctl"],
+    "margin-left": 6,
+    "margin-right": 6,
+    "margin-top": 4,
+    "modules-left": ["custom/logo","mpris"],
     "modules-center": ["sway/workspaces"],
     "modules-right": ["tray","network","wireplumber","custom/clock"],
 	
@@ -65,14 +68,17 @@
     },
 
 
-    "custom/playerctl": {
-        "format": "{}",
-        "exec": "~/.config/sway/waybar/playerctl-info.sh",
-        "interval": 5,
-	"on-click":"playerctl play-pause"
-    },
-
-
-
+"mpris": {
+	"format":"{player_icon} {artist} - {title}",
+	"format-paused":"{status_icon} {artist} - {title}",
+  "max-length": 25,
+	"player-icons": {
+		"default": "  ",
+		"mpv": "🎵"
+	},
+	"status-icons": {
+		"paused": "  "
+	},
+}
 }
 

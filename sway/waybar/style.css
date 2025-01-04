@@ -5,10 +5,10 @@
 
 window#waybar{
   font-size: 12px;
-  background-color: #0f1112;
+  background: rgba(0, 0, 0, 0);  
 }
 
-#custom-playerctl,
+#mpris,
 #network,
 #wireplumber,
 #tray,
@@ -24,8 +24,8 @@ window#waybar{
   font-weight: bold;
   padding-left: 5px;
   padding-right: 5px;
-  border-bottom: 2px #1e1e1e solid;
-  background-color: #141719;
+  border-bottom: 2px #4c4c4c solid;
+  background-color: #161619; 
 }
 
 #custom-logo{
@@ -60,5 +60,11 @@ window#waybar{
  border-bottom: 2px white solid;
  border-radius: 0px;
  color: white;
+}
+.modules-left, 
+.modules-right,
+.modules-center{
+ background-color: #0f0f0f;
+ border: #a39ec4 2px solid;
 }
 
