@@ -22,8 +22,6 @@ font = DaddyTimeMono Nerd Font Mono
 
 background-color = #121212D9 
 
-text-color = #47404i0
-
 selection-color = #6f7375
 
 fuzzy-match = true
