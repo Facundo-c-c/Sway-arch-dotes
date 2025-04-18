@@ -4,9 +4,9 @@
 }
 
 window#waybar{
-  font-size: 12px;
-  background: rgba(0, 0, 0, 0);  
-}
+ font-size: 12px;
+ background: #0f0f0f;  
+ }
 
 #mpris,
 #network,
@@ -60,11 +60,11 @@ window#waybar{
  border-bottom: 2px white solid;
  border-radius: 0px;
  color: white;
-}
+}/*
 .modules-left, 
 .modules-right,
 .modules-center{
  background-color: #0f0f0f;
  border: #a39ec4 2px solid;
-}
+}*/
 

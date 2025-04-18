@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "swaylock --image ~/Pictures/wallpaper/image.png -f",
+    "action" : "swaylock -f -e -i ~/.cache/blurry_wallpaper.png",
     "text" : "",
 }
 {

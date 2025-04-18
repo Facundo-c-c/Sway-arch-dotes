@@ -1,6 +1,14 @@
-    output * bg ~/Pictures/wallpaper/nuno-antunes-wra9MptZ_ag-unsplash.jpg fill 
+    exec sh ~/.config/sway/random.sh
 
     exec waybar -c ~/.config/sway/waybar/config -s ~/.config/sway/waybar/style.css
+  
+    exec swayidle -w \
+    timeout 300 'swaylock -f -e -i ~/.cache/blurry_wallpaper.png' \
+    timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+    timeout 900 'systemctl suspend' \
+    before-sleep 'swaylock -f -e -i ~/.cache/blurry_wallpaper.png'
+    for_window [class=".*"] inhibit_idle fullscreen
+    for_window [app_id=".*"] inhibit_idle fullscreen
 
     set $mod Mod4
 
@@ -28,7 +36,12 @@
     bindsym $mod+w exec wlogout -b 2
 
     bindsym $mod+q kill
-
+  
+    bindsym --whole-window {
+    $mod+button4 workspace prev
+    $mod+button5 workspace next
+    }
+  
     floating_modifier $mod normal
 
     bindsym $mod+Shift+c reload
@@ -104,6 +117,7 @@ mode "resize" {
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
+
 }
 bindsym $mod+r mode "resize"
 
@@ -115,6 +129,6 @@ input * {
     gaps outer 3px
     gaps inner 3px
     client.unfocused #0e1317aa #0e1317aa #0e1317aa #0e1317aa
-    client.focused  #a39ec4 #a39ec4 #a39ec4 #a39ec4
+    client.focused  #A4917A #A4917A #A4917A #A4917A
 
     seat seat0 xcursor_theme Future-black-cursors 24
