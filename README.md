@@ -1,6 +1,7 @@
 # Sway-arch-dotes
 
 ---------
-![screenshot](https://github.com/user-attachments/assets/b8fcb20b-9844-42cd-b27d-a76290087f7a)
+![screenshot](https://github.com/user-attachments/assets/c83dd196-de4f-420b-80db-03f4cd7ee8ab)i
 
-![screenshot](https://github.com/user-attachments/assets/15997f8e-c511-4918-9525-55913b84b7a1)
+![screenshot](https://github.com/user-attachments/assets/50b0ab68-2551-49b6-b612-8f858934daa9)
+
