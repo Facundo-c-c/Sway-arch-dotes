@@ -1,14 +1,15 @@
 {
     "position": "top",
-    "height": 43,
-    "modules-left": ["custom/logo","mpris"],
+    "height": 40,
+    "modules-left": ["mpris"],
     "modules-center": ["sway/workspaces"],
-    "modules-right": ["tray","network","wireplumber","custom/clock"],
+    "modules-right": ["tray","wireplumber","custom/separator","custom/clock"],
 	
     "custom/clock": {
         "format": "    {}",
         "interval": 60,
         "exec": "date +'%H : %M'",
+        "tooltip": false
     },    
 
    
@@ -25,18 +26,17 @@
         "persistent-workspaces": {
         "1": [],
         "2": [],
-        "3": [],
+        "3": []
          },
         },
-
 
     "tray": {
         "icon-size": 17,
         "spacing":3,
     },
 
-    "custom/logo": {
-        "format": "󰣇 ",
+    "custom/separator": {
+        "format": " · ",
         "interval": "once",
         "tooltip": false
    },
@@ -50,24 +50,9 @@
     "scroll-step": 5,
 },
 
-    "network": {
-	"interface": "wlan0",
-	"format": "{ifname}",
-	"format-wifi":"     {essid}",
-	"format-ethernet": "{ifname} " ,
-	"tooltip-format": "{ifname}",
-	"tooltip-format-wifi": " {essid} ({signalStrength}%)   ",
-	"tooltip-format-ethernet": "{ifname}  ",
-	"tooltip-format-disconnected": "Disconnected",
-	"max-length": 60,
-    "on-click":"nmcli networking off",
-    "on-click-right": "nmcli networking on",
-    },
-
-
 "mpris": {
-	"format":"{player_icon} {artist} - {title}",
-	"format-paused":"{status_icon} {artist} - {title}",
+	"format":"{player_icon} {title}",
+	"format-paused":"{status_icon} {title}",
   "max-length": 25,
 	"player-icons": {
 		"default": "  ",

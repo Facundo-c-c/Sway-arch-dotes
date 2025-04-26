@@ -1,6 +1,5 @@
 *{
   padding: 1px 1px;
-  color: #c2c1c2;
 }
 
 window#waybar{
@@ -9,11 +8,10 @@ window#waybar{
  }
 
 #mpris,
-#network,
 #wireplumber,
 #tray,
-#custom-clock,
-#custom-logo{
+#custom-clock
+{
   margin: 3px;
   padding: 5px;
   margin-top: 5px;
@@ -24,19 +22,12 @@ window#waybar{
   font-weight: bold;
   padding-left: 5px;
   padding-right: 5px;
-  border-bottom: 2px #4c4c4c solid;
-  background-color: #161619; 
-}
-
-#custom-logo{
- font-size: 18px;
- padding-left: 8px
+  color: #c2c1c2;
 }
 
 #workspaces {
   font-size: 12px;
-  margin: 2px 0px;
-  color: white;
+  margin: 2px 0px;  
   border-radius: 0px;
 
 }
@@ -44,27 +35,19 @@ window#waybar{
   color: #630330;
 }
 #workspaces button{
- border-bottom: 2px #1e1e1e solid;
  margin-left: 4px;
  margin-right: 4px;
  border-radius: 0px;
- color: grey
+ color: #3f3f3f 
 }
 #workspaces button.persistent{
   color: #545154;
 }
 #workspaces button.empty{
-  color: #3f3f3f;
+  color: #1e1e1e;
 }
 #workspaces button.focused{
- border-bottom: 2px white solid;
  border-radius: 0px;
  color: white;
-}/*
-.modules-left, 
-.modules-right,
-.modules-center{
- background-color: #0f0f0f;
- border: #a39ec4 2px solid;
-}*/
+}
 

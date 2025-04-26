@@ -1,8 +1,0 @@
-{
-  "players": ["chromium","qutebrowser","spotify","firefox"],
-  "align": "center",
-  "width": 20,
-  "height": 15,
-  "progress": "󰝤",
-  "empty": "󰁱"
-}
