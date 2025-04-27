@@ -3,7 +3,9 @@
     
     exec waybar -c ~/.config/sway/waybar/config -s ~/.config/sway/waybar/style.css
     
-    exec sh ~/.config/sway/random.sh
+    exec swaybg -i ~/Pictures/wallpaper/railway.jpg
+
+    #exec sh ~/.config/sway/random.sh
 
     exec swayidle -w \
     timeout 300 'swaylock -f -e -i ~/.cache/blurry_wallpaper.png' \
@@ -27,7 +29,7 @@
     bindsym $mod+Return exec $term
     bindsym $mod+t exec $term
     bindsym $mod+b exec qutebrowser
-    bindsym $mod+p exec grim -g "$(slurp)" screenshot.png
+    bindsym $mod+p exec grim -g "$(slurp)" 
     bindsym $mod+f exec $term ranger
 
     bindsym XF86MonBrightnessUp exec brightnessctl s 10%+
@@ -125,7 +127,7 @@ input * {
 
     default_border pixel 3px
     gaps outer 2px
-    gaps inner 2px
+    gaps inner 4px
     client.unfocused $color0 $color0 $color0 $color0 
     client.focused  $color1 $color1 $color1 $color1
 

@@ -6,7 +6,7 @@
     "modules-right": ["tray","wireplumber","custom/separator","custom/clock"],
 	
     "custom/clock": {
-        "format": "    {}",
+        "format": "{}",
         "interval": 60,
         "exec": "date +'%H : %M'",
         "tooltip": false
