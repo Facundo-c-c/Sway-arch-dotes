@@ -10,7 +10,7 @@ window#waybar{
 #mpris,
 #wireplumber,
 #tray,
-#custom-clock
+#clock
 {
   margin: 3px;
   padding: 5px;

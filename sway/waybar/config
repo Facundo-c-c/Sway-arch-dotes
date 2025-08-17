@@ -3,16 +3,8 @@
     "height": 40,
     "modules-left": ["mpris"],
     "modules-center": ["sway/workspaces"],
-    "modules-right": ["tray","wireplumber","custom/separator","custom/clock"],
-	
-    "custom/clock": {
-        "format": "{}",
-        "interval": 60,
-        "exec": "date +'%H : %M'",
-        "tooltip": false
-    },    
-
-   
+    "modules-right": ["tray","wireplumber","custom/separator","clock"],
+	   
     "sway/workspaces": {
         "all-outputs": true,
     "format": "{icon}",
@@ -30,9 +22,18 @@
          },
         },
 
+    "clock": {
+     "interval": 60,
+     "format": "{:%H:%M}",
+     "max-length": 25,
+     "timezones":[ "America/Buenos_Aires"],
+     "tooltip": false 
+    },
+
     "tray": {
         "icon-size": 17,
         "spacing":3,
+	"interval": 120,
     },
 
     "custom/separator": {
@@ -43,7 +44,7 @@
 
 "wireplumber": {
     "format": "{icon}     {volume}%",
-    "format-muted": "",
+    "format-muted": " 󰝟 ",
     "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
     "format-icons": ["", "", ""],
     "max-volume": 100,

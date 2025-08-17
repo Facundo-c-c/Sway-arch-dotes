@@ -1,17 +1,16 @@
 
     include ~/.cache/wal/colors-sway
-    
-    exec waybar -c ~/.config/sway/waybar/config -s ~/.config/sway/waybar/style.css
-    
-    exec swaybg -i ~/Pictures/wallpaper/railway.jpg
+   
+    exec sh ~/.config/sway/random.sh
 
-    #exec sh ~/.config/sway/random.sh
+    exec waybar -c ~/.config/sway/waybar/config -s ~/.config/sway/waybar/style.css
 
     exec swayidle -w \
     timeout 300 'swaylock -f -e -i ~/.cache/blurry_wallpaper.png' \
     timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
     timeout 900 'systemctl suspend' \
     before-sleep 'swaylock -f -e -i ~/.cache/blurry_wallpaper.png'
+    
     for_window [class=".*"] inhibit_idle fullscreen
     for_window [app_id=".*"] inhibit_idle fullscreen
 
@@ -38,7 +37,10 @@
     bindsym XF86AudioRaiseVolume exec wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 5%+
     bindsym XF86AudioLowerVolume exec wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 5%-  
 
-    bindsym $mod+w exec wlogout -b 2
+    bindsym $mod+w exec sh ~/.config/tofi/powermenu.sh
+
+    bindsym $mod+n exec swaymsg 'exec kitty --class nmtui_float nmtui'
+    for_window [app_id="nmtui_float"] floating enable, resize set 800px 650px, move position center
 
     bindsym $mod+q kill
   
@@ -132,3 +134,5 @@ input * {
     client.focused  $color1 $color1 $color1 $color1
 
     seat seat0 xcursor_theme Future-black-cursors 24
+
+
