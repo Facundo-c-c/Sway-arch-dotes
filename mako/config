@@ -1,0 +1,21 @@
+include=/home/facundo/.cache/wal/mako-colors
+sort=-time
+layer=overlay
+width=300
+height=110
+border-size=2
+icons=0
+max-icon-size=64
+default-timeout=5000
+ignore-timeout=1
+font=DaddyTimeMono Nerd Font mono 14
+
+[app-name=wp-vol]
+layer=overlay
+group-by=app-name
+# Hide the group-index
+format=<b>%s</b>\n%b
+
+[app-name=volume group-index=0]
+# Only show last notification
+invisible=0

@@ -1,0 +1,9 @@
+# Colors
+background-color={background}
+text-color={cursor}
+border-color={color1}
+progress-color=over {color10}
+
+
+[urgency=high]
+border-color={color2}

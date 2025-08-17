@@ -7,3 +7,5 @@ wal -b "#121212" -i "$IMAGE" &
 swaybg -i "$IMAGE" -m fill &
 
 magick "$IMAGE" -resize 25% -blur 0x8 -resize 400% ~/.cache/blurry_wallpaper.png
+
+makoctl reload
