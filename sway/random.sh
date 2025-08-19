@@ -2,7 +2,7 @@
 
 IMAGE=$(find ~/Pictures/wallpaper -type f \( -iname '*.jpg' -o -iname '*.png' \) | shuf -n 1)
 
-wal -b "#121212" -i "$IMAGE" &
+wal -b "#0f0f0f" -i "$IMAGE" &
 
 swaybg -i "$IMAGE" -m fill &
 

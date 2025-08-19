@@ -2,8 +2,10 @@
     include ~/.cache/wal/colors-sway
    
     exec sh ~/.config/sway/random.sh
-
+	
     exec mako
+    
+    exec poweralertd -i "line power"
 
     exec waybar -c ~/.config/sway/waybar/config -s ~/.config/sway/waybar/style.css
 
@@ -131,7 +133,7 @@ input * {
 
     default_border pixel 3px
     gaps outer 2px
-    gaps inner 4px
+    gaps inner 3px
     client.unfocused $color0 $color0 $color0 $color0 
     client.focused  $color1 $color1 $color1 $color1
 

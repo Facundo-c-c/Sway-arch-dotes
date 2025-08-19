@@ -4,9 +4,11 @@
 
 window#waybar{
  font-size: 12px;
- background: #0f0f0f;  
- }
+ background-color: #0f0f0f; 
+}
 
+#custom-logo,
+#battery,
 #mpris,
 #wireplumber,
 #tray,
@@ -23,6 +25,11 @@ window#waybar{
   padding-left: 5px;
   padding-right: 5px;
   color: #c2c1c2;
+}
+
+#custom-logo{
+ font-size: 18px;
+ padding-left: 8px
 }
 
 #workspaces {
@@ -50,4 +57,12 @@ window#waybar{
  border-radius: 0px;
  color: white;
 }
+.modules-left, 
+.modules-right,
+.modules-center{
+ background-color: #0f0f0f;
+}
 
+#custom-logo{
+font-size: 14px
+}

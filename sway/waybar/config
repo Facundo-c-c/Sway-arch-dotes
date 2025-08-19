@@ -1,9 +1,9 @@
 {
     "position": "top",
     "height": 40,
-    "modules-left": ["mpris"],
+    "modules-left": ["custom/logo","mpris"],
     "modules-center": ["sway/workspaces"],
-    "modules-right": ["tray","wireplumber","custom/separator","clock"],
+    "modules-right": ["tray","battery","custom/separator","wireplumber","custom/separator","clock"],
 	   
     "sway/workspaces": {
         "all-outputs": true,
@@ -62,6 +62,19 @@
 	"status-icons": {
 		"paused": "  "
 	},
+},
+
+"battery": {
+    "bat": "BAT0",
+    "interval": 60,
+    "states": {
+        "warning": 15,
+        "critical": 5
+    },
+    "format": "{icon}  {capacity}%",
+    "format-icons": ["󰁺", "󰁼", "󰁾", "󰂀", "󰁹"],
+    "max-length": 30
 }
+
 }
 
